@@ -127,7 +127,7 @@ def make_predictions(comp_list, elec_list):
     del pred_dict['y_stdu_pred']
     del pred_dict['y_stdc_pred']
 
-    for f in feature_names:
-        pred_dict[f] = np.array(df_test[f]).ravel()
+    #for f in feature_names:
+    #    pred_dict[f] = np.array(df_test[f]).ravel()
 
     return pd.DataFrame(pred_dict)
